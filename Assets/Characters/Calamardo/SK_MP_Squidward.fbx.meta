@@ -413,7 +413,7 @@ ModelImporter:
     - name: Ankle2_L
       parentName: Knee2Part1_L
       position: {x: 0.0016765654, y: -2.7241184e-10, z: 1.6100671e-10}
-      rotation: {x: 0.9953772, y: -0.094962604, z: -0.014369598, w: 0.00018608992}
+      rotation: {x: 0.9953772, y: -0.09496259, z: -0.014369598, w: 0.00018608989}
       scale: {x: 1.0000083, y: 0.9999995, z: 0.9999994}
     - name: Ball2_L
       parentName: Ankle2_L
@@ -638,7 +638,7 @@ ModelImporter:
     - name: Scapula_L
       parentName: Chest_M
       position: {x: -0.00015633657, y: -0.00017658877, z: 0.0004250744}
-      rotation: {x: 0.8300203, y: 0.011481528, z: 0.55757713, w: -0.0064913454}
+      rotation: {x: 0.8300203, y: 0.011481529, z: 0.55757713, w: -0.006491346}
       scale: {x: 0.99981713, y: 1, z: 0.99999905}
     - name: Shoulder_L
       parentName: Scapula_L
