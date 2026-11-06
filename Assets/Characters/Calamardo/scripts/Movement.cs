@@ -58,17 +58,17 @@ public class Movement : MonoBehaviour
         }
 
         // Rotate character towards movement direction
-        if (moveDirection.magnitude > 0.1f)
-        {
-            Quaternion targetRotation = Quaternion.LookRotation(moveDirection);
+       // Do not rotate when moving backwards with S
+	if (moveDirection.magnitude > 0.1f && vertical >= 0f)
+	{
+    	Quaternion targetRotation = Quaternion.LookRotation(moveDirection);
 
-            transform.rotation = Quaternion.Slerp(
-                transform.rotation,
-                targetRotation,
-                rotationSpeed * Time.deltaTime
-            );
-        }
-
+    	transform.rotation = Quaternion.Slerp(
+        	transform.rotation,
+	        targetRotation,
+        	rotationSpeed * Time.deltaTime
+    );
+}
         // Apply gravity
         if (controller.isGrounded && verticalVelocity < 0)
         {

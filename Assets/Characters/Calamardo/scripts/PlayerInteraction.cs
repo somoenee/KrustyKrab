@@ -1,3 +1,4 @@
+
 using UnityEngine;
 
 public class PlayerInteraction : MonoBehaviour
@@ -25,7 +26,14 @@ public class PlayerInteraction : MonoBehaviour
         {
             if (obj.CompareTag("Interactable"))
             {
-                Debug.Log("Interacting with: " + obj.name);
+                InteractableObject interactable =
+                    obj.GetComponentInParent<InteractableObject>();
+
+                if (interactable != null)
+                {
+                    interactable.Interact();
+                    return;
+                }
             }
         }
     }
